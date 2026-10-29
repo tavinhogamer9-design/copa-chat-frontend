@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CopaBot — História das Copas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- CABEÇALHO -->
+        <header class="header">
+
+            <div class="logo-area">
+                <div class="ball">⚽</div>
+
+                <div>
+                    <h1>CopaBot</h1>
+                    <span>História das Copas do Mundo</span>
+                </div>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                Online
+            </div>
+
+        </header>
+
+
+        <!-- ÁREA DO CHAT -->
+        <main class="chat-container">
+
+            <div id="messages" class="messages">
+
+                <div class="message bot-message">
+
+                    <div class="avatar">
+                        ⚽
+                    </div>
+
+                    <div class="bubble">
+                        <strong>CopaBot</strong>
+
+                        <p>
+                            Olá! 👋🇧🇷
+                        </p>
+
+                        <p>
+                            Sou especialista na história da Copa do Mundo.
+                            Pode me perguntar sobre seleções, jogadores,
+                            títulos, finais, artilheiros, partidas históricas
+                            e muito mais.
+                        </p>
+
+                        <p>
+                            🌎 Mas lembre-se: meu assunto é exclusivamente
+                            <strong>Copa do Mundo!</strong>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- SUGESTÕES -->
+        <div class="suggestions">
+
+            <button onclick="sendSuggestion('Qual seleção tem mais títulos da Copa do Mundo?')">
+                🏆 Mais títulos
+            </button>
+
+            <button onclick="sendSuggestion('Quem foi o maior artilheiro das Copas?')">
+                ⚽ Artilheiros
+            </button>
+
+            <button onclick="sendSuggestion('Como foi a Copa do Mundo de 2002?')">
+                🇧🇷 Copa de 2002
+            </button>
+
+            <button onclick="sendSuggestion('Qual foi a final mais histórica da Copa do Mundo?')">
+                📖 Finais históricas
+            </button>
+
+        </div>
+
+
+        <!-- INPUT -->
+        <footer class="input-area">
+
+            <div class="input-box">
+
+                <textarea
+                    id="userInput"
+                    placeholder="Pergunte sobre a Copa do Mundo..."
+                    rows="1"
+                    onkeydown="handleKey(event)"
+                ></textarea>
+
+                <button
+                    id="sendButton"
+                    onclick="sendMessage()"
+                    aria-label="Enviar mensagem"
+                >
+                    ➤
+                </button>
+
+            </div>
+
+            <div class="footer-text">
+                CopaBot • Especialista em Copa do Mundo
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
