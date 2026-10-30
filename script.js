@@ -1,4 +1,4 @@
-const API_URL = "https://chatcopa.onrender.com/chat";
+const API_URL = "https://copa-chat-backend-gobe.onrender.com";
 
 const messages = document.getElementById("messages");
 const input = document.getElementById("userInput");
